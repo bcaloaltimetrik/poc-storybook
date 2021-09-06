@@ -14,9 +14,6 @@ module.exports = {
   webpackFinal: async (config) => {
     config.plugins.push(
       new LWCWebpackPlugin({
-        modules: [
-          { dir: "src/modules" }
-        ],
         stylesheetConfig: { customProperties: { allowDefinition: true } }
       })
     );
