@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Brahian Calo",
+  "engines": {
+    "node": ">= 14.x"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@storybook/addon-actions": "^6.3.6",
@@ -11,11 +14,16 @@
     "@storybook/addon-links": "^6.3.6",
     "@storybook/web-components": "^6.3.6",
     "babel-loader": "^8.2.2",
-    "lit-html": "^1.4.1"
+    "lit-html": "^1.4.1",
+    "lwc-services": "^3.1.2"
   },
   "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "volta": {
+    "node": "14.15.4",
+    "yarn": "1.22.10"
   }
 }

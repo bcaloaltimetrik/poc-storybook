@@ -1,3 +1,6 @@
+
+const LWCWebpackPlugin = require("lwc-webpack-plugin");
+
 module.exports = {
   "stories": [
     "../stories/**/*.stories.mdx",
@@ -6,5 +9,18 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials"
-  ]
+  ],
+
+  webpackFinal: async (config) => {
+    config.plugins.push(
+      new LWCWebpackPlugin({
+        modules: [
+          { dir: "src/modules" }
+        ],
+        stylesheetConfig: { customProperties: { allowDefinition: true } }
+      })
+    );
+
+    return config;
+  }
 }
