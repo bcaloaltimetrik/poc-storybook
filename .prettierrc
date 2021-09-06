@@ -1,0 +1,12 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "**/modules/**/*.html",
+      "options": {
+        "parser": "lwc",
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}

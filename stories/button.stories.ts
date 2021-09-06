@@ -1,26 +1,26 @@
-import { html } from 'lit-html';
-import Button from 'poc/button';
+import { html } from "lit-html"
+import Button from "poc/button"
 
 function buildAndRegisterCustomElement(elementName, elementClass) {
   if (!customElements.get(elementName)) {
-      const customElement = elementClass.CustomElementConstructor;
-      customElements.define(elementName, customElement);
+    const customElement = elementClass.CustomElementConstructor
+    customElements.define(elementName, customElement)
   }
 }
 
-buildAndRegisterCustomElement("poc-button", Button);
+buildAndRegisterCustomElement("poc-button", Button)
 
 export default {
-  title: 'Example/Button',
+  title: "Example/Button",
   argTypes: {
-    backgroundColor: { control: 'color' },
-    onClick: { action: 'onClick' },
+    backgroundColor: { control: "color" },
+    onClick: { action: "onClick" },
   },
-};
+}
 
 const Template = () => html`<poc-button></poc-button>`
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 // Primary.args = {
 //   primary: true,
 //   label: 'Button',

@@ -1,6 +1,4 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc"
 
 // TODO Recreate Button.js HERE
-export default class Button extends LightningElement {
-    
-}
+export default class Button extends LightningElement {}

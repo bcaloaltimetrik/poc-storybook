@@ -1,9 +1,9 @@
 {
-    "compilerOptions": {
-        "baseUrl": "src/modules/poc",
-        "experimentalDecorators": true,
-        "paths": {
-            "poc/button": ["./button/button.ts"]
-        }
+  "compilerOptions": {
+    "baseUrl": "src/modules/poc",
+    "experimentalDecorators": true,
+    "paths": {
+      "poc/button": ["./button/button.ts"]
     }
+  }
 }
