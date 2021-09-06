@@ -30,6 +30,9 @@
   "lint-staged": {
     "**/*.{css,html,js,json,json5,md,ts,yaml,yml}": [
       "prettier --write"
+    ],
+    ".prettierrc": [
+      "prettier --write"
     ]
   },
   "volta": {

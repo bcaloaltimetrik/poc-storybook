@@ -1,5 +1,5 @@
-import { html } from "lit-html"
-import Button from "poc/button"
+import { html } from 'lit-html'
+import Button from 'poc/button'
 
 function buildAndRegisterCustomElement(elementName, elementClass) {
   if (!customElements.get(elementName)) {
@@ -8,13 +8,13 @@ function buildAndRegisterCustomElement(elementName, elementClass) {
   }
 }
 
-buildAndRegisterCustomElement("poc-button", Button)
+buildAndRegisterCustomElement('poc-button', Button)
 
 export default {
-  title: "Example/Button",
+  title: 'Example/Button',
   argTypes: {
-    backgroundColor: { control: "color" },
-    onClick: { action: "onClick" },
+    backgroundColor: { control: 'color' },
+    onClick: { action: 'onClick' },
   },
 }
 
