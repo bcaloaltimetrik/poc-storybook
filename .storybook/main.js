@@ -8,6 +8,13 @@ module.exports = {
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
 
   webpackFinal: async (config) => {
+    // Excludes src/modules from postcss-loader
+    config.module.rules.forEach((rule) => {
+      if (rule.test.toString() === /\.css$/.toString()) {
+        rule.exclude = /src\/modules/
+      }
+    })
+
     config.plugins.push(
       new LWCWebpackPlugin({
         stylesheetConfig: { customProperties: { allowDefinition: true } },
