@@ -1,12 +1,6 @@
 import { html } from 'lit-html'
 import Button from 'poc/button'
-
-function buildAndRegisterCustomElement(elementName, elementClass) {
-  if (!customElements.get(elementName)) {
-    const customElement = elementClass.CustomElementConstructor
-    customElements.define(elementName, customElement)
-  }
-}
+import { buildAndRegisterCustomElement } from './utils'
 
 buildAndRegisterCustomElement('poc-button', Button)
 
@@ -15,6 +9,12 @@ export default {
   argTypes: {
     backgroundColor: {
       control: 'color',
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: ['small', 'medium', 'large'],
+      },
     },
   },
 }
