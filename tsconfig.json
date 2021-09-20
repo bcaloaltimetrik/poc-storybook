@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "node",
     "baseUrl": "src/modules/poc",
     "experimentalDecorators": true,
     "paths": {
