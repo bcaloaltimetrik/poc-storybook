@@ -13,6 +13,7 @@
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
     "@storybook/web-components": "^6.3.6",
+    "@types/jest": "^27.0.2",
     "babel-loader": "^8.2.2",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
@@ -27,7 +28,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepare": "husky install",
-    "prettier": "prettier --write \"**/*.{css,html,js,json,json5,md,ts,yaml,yml}\""
+    "prettier": "prettier --write \"**/*.{css,html,js,json,json5,md,ts,yaml,yml}\"",
+    "test": "jest"
   },
   "lint-staged": {
     "**/*.{css,html,js,json,json5,md,ts,yaml,yml}": [

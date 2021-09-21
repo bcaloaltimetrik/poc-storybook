@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "moduleResolution": "node",
-    "baseUrl": "src/modules/poc",
+    "baseUrl": "src/modules",
     "experimentalDecorators": true,
+    "moduleResolution": "node",
     "paths": {
-      "poc/button": ["./button/button.ts"]
-    }
+      "poc/button": ["./poc/button/button.ts"],
+      "utils/test": ["./utils/test/test.ts"]
+    },
+    "target": "ESNext"
   }
 }
