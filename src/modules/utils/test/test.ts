@@ -6,8 +6,8 @@ export const createRenderComponent =
     ComponentConstructor: new () => T
   ) =>
   (props = {}) => {
-    const comp = createElement(tag, { is: ComponentConstructor })
+    const comp = createElement<T>(tag, { is: ComponentConstructor })
     Object.assign(comp, props)
     document.body.appendChild(comp)
-    return comp as T
+    return comp
   }

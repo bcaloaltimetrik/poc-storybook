@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 const DEFAULT_SIZE = 'medium'
 export default class Button extends LightningElement {
-  _primary = false
+  private _primary = false
   @api label: string
   @api backgroundColor: string
   @api size: string
@@ -29,5 +29,9 @@ export default class Button extends LightningElement {
     return cn(
       this.backgroundColor && `background-color: ${this.backgroundColor}`
     )
+  }
+
+  handleClick(): void {
+    this.dispatchEvent(new CustomEvent<void>('clicked'))
   }
 }
