@@ -4,6 +4,7 @@ import cn from 'classnames'
 const DEFAULT_SIZE = 'medium'
 export default class Button extends LightningElement {
   private _primary = false
+  private active = false
   @api label: string
   @api backgroundColor: string
   @api size: string
@@ -20,18 +21,22 @@ export default class Button extends LightningElement {
   get buttonClass(): string {
     return cn(
       'button',
-      (this.primary && 'button--primary') || 'button--secundary',
-      `button--${this.size || DEFAULT_SIZE}`
+      (this.primary && 'button--primary') || 'button--secondary',
+      `button--${this.size || DEFAULT_SIZE}`,
+      this.active && 'button--active'
     )
   }
 
   get buttonStyles(): string {
     return cn(
-      this.backgroundColor && `background-color: ${this.backgroundColor}`
+      this.backgroundColor &&
+        !this.active &&
+        `background-color: ${this.backgroundColor}`
     )
   }
 
   handleClick(): void {
+    this.active = true
     this.dispatchEvent(new CustomEvent<void>('clicked'))
   }
 }

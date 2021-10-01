@@ -17,7 +17,7 @@ describe('button', () => {
       expect(button.textContent).toBe(label)
       expect(button.classList).toHaveLength(3)
       expect(button.classList).toContain('button')
-      expect(button.classList).toContain('button--secundary')
+      expect(button.classList).toContain('button--secondary')
       expect(button.classList).toContain('button--medium')
     })
 
