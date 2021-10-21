@@ -24,7 +24,7 @@ const Template = ({ primary, label, backgroundColor, size }) => html`
     background-color="${backgroundColor}"
     label="${label}"
     primary="${primary}"
-    size=${size || ''}
+    size="${size || ''}"
   ></poc-button>
 `
 
