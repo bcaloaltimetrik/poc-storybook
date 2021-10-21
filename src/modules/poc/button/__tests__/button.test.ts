@@ -52,9 +52,15 @@ describe('button', () => {
 
       const button: HTMLButtonElement =
         component.shadowRoot.querySelector('button')
+      expect(button.classList).not.toContain('button--active')
+
       button.click()
 
       expect(mockClicked).toHaveBeenCalledTimes(1)
+
+      return Promise.resolve().then(() =>
+        expect(button.classList).toContain('button--active')
+      )
     })
   })
 })
