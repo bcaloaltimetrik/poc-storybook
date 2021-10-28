@@ -4,10 +4,10 @@ const MOCK = {
   login: 'bcaloaltimetrik',
   id: 38947479,
   node_id: 'MDQ6VXNlcjM4OTQ3NDc5',
-  avatar_url: 'https://avatars.githubusercontent.com/u/38947479?v=4',
+  avatarUrl: 'https://avatars.githubusercontent.com/u/38947479?v=4',
   gravatar_id: '',
   url: 'https://api.github.com/users/bcaloaltimetrik',
-  html_url: 'https://github.com/bcaloaltimetrik',
+  htmlUrl: 'https://github.com/bcaloaltimetrik',
   followers_url: 'https://api.github.com/users/bcaloaltimetrik/followers',
   following_url:
     'https://api.github.com/users/bcaloaltimetrik/following{/other_user}',
@@ -41,4 +41,6 @@ const MOCK = {
 
 export default class GithubCard extends LightningElement {
   @api username
+
+  private data = MOCK
 }
