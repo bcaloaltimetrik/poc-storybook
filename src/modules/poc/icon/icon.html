@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg">
-    <use href="/svgs/spritesheet.svg#location"></use>
+  <svg if:true={iconName} xmlns="http://www.w3.org/2000/svg" class={iconClass}>
+    <use href={iconHref}></use>
   </svg>
 </template>
