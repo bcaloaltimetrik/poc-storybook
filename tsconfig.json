@@ -5,6 +5,7 @@
     "moduleResolution": "node",
     "paths": {
       "poc/button": ["./poc/button/button.ts"],
+      "poc/icon": ["./poc/icon/icon.ts"],
       "utils/test": ["./utils/test/test.ts"]
     },
     "target": "ESNext"

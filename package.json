@@ -25,7 +25,7 @@
     "classnames": "^2.3.1"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./src/assets",
     "build-storybook": "build-storybook",
     "prepare": "husky install",
     "prettier": "prettier --write \"**/*.{css,html,js,json,json5,md,ts,yaml,yml}\"",
