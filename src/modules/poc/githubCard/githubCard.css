@@ -1,3 +1,8 @@
+:host {
+  display: block;
+  width: fit-content;
+}
+
 a {
   text-decoration: none;
   color: #0176d3;
@@ -14,6 +19,7 @@ a:hover {
   display: flex;
   padding: 12px;
   align-items: center;
+  flex-direction: column;
 }
 
 .container img {
@@ -32,4 +38,21 @@ a:hover {
 
 .card-info .card-info_name {
   font-size: 28px;
+}
+
+.card-info_details {
+  margin-top: 12px;
+}
+
+.card-info_details > * {
+  display: flex;
+  align-items: center;
+}
+
+.card-info_details span {
+  margin-left: 4px;
+}
+
+.card-info_details :not(:first-of-type) {
+  margin-top: 4px;
 }

@@ -6,8 +6,16 @@
         <span>{data.name}</span>
       </a>
       <span>{username}</span>
-      <span>{data.company}</span>
-      <span>{data.location}</span>
+      <div class="card-info_details">
+        <div class="card-info_details-company">
+          <poc-icon size="small" icon-name="building"></poc-icon>
+          <span>{data.company}</span>
+        </div>
+        <div class="card-info_details-location">
+          <poc-icon size="small" icon-name="location"></poc-icon>
+          <span>{data.location}</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
