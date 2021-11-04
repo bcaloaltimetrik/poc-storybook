@@ -8,14 +8,18 @@ svg {
   display: block;
 }
 
-.size--medium {
-  --icon-size: 26px;
+.size--x-small {
+  --icon-size: 16px;
 }
 
 .size--small {
-  --icon-size: 22px;
+  --icon-size: 20px;
+}
+
+.size--medium {
+  --icon-size: 24px;
 }
 
 .size--large {
-  --icon-size: 32px;
+  --icon-size: 28px;
 }
