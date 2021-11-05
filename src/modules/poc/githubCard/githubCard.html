@@ -1,5 +1,5 @@
 <template>
-  <div if:true={username} class="container">
+  <div if:true={renderCard} class="container">
     <img src={data.avatarUrl} alt="avatar" />
     <div class="card-info">
       <a href={data.htmlUrl} class="card-info_name">
@@ -7,11 +7,11 @@
       </a>
       <span>{username}</span>
       <div class="card-info_details">
-        <div class="card-info_details-company">
+        <div if:true={data.company} class="card-info_details-company">
           <poc-icon size="small" icon-name="building"></poc-icon>
           <span>{data.company}</span>
         </div>
-        <div class="card-info_details-location">
+        <div if:true={data.location} class="card-info_details-location">
           <poc-icon size="small" icon-name="location"></poc-icon>
           <span>{data.location}</span>
         </div>
