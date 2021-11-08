@@ -1,0 +1,10 @@
+:host {
+  --global-link-color: #0176d3;
+  --global-link-color-hover: #014486;
+  --global-shade-theme-color: #f3f2f2;
+  --global-shade-border-color: #dddbda;
+  --global-small-space: 4px;
+  --global-medium-space: 12px;
+  --global-text-color: #3e3e3c;
+  --global-title-font-size: 28px;
+}
