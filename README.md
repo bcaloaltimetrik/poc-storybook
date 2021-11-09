@@ -26,4 +26,6 @@ yarn prettier
 
 ## Test
 
-Coming soon
+```sh
+yarn test
+```
