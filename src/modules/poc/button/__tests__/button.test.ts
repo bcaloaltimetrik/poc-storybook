@@ -3,7 +3,7 @@ import { createRenderComponent } from 'utils/test'
 
 const render = createRenderComponent('poc-button', Button)
 
-describe('button', () => {
+describe('poc-button', () => {
   describe('render', () => {
     it('renders a label', () => {
       const label = 'Test Label'
