@@ -21,7 +21,7 @@ export default {
 
 const Template = ({ primary, label, backgroundColor, size }) => html`
   <poc-button
-    background-color="${backgroundColor}"
+    background-color="${backgroundColor || ''}"
     label="${label}"
     primary="${primary}"
     size="${size || ''}"
