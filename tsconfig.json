@@ -6,8 +6,10 @@
     "paths": {
       "poc/button": ["./poc/button/button.ts"],
       "poc/icon": ["./poc/icon/icon.ts"],
+      "poc/githubCard": ["./poc/githubCard/githubCard.ts"],
+      "services/githubUser": ["./services/githubUser/githubUser.ts"],
+      "utils/debounce": ["./utils/debounce/debounce.ts"],
       "utils/test": ["./utils/test/test.ts"],
-      "utils/debounce": ["./utils/debounce/debounce.ts"]
     },
     "target": "ESNext"
   }

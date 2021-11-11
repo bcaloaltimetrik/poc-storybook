@@ -1,0 +1,60 @@
+@import 'css/variables';
+
+:host {
+  display: block;
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: var(--global-link-color);
+}
+
+a:hover {
+  color: var(--global-link-color-hover);
+}
+
+.container {
+  background-color: var(--global-shade-theme-color);
+  border: 2px solid var(--global-shade-border-color);
+  border-radius: 25px;
+  display: flex;
+  padding: var(--global-medium-space);
+  align-items: center;
+  flex-direction: column;
+}
+
+.container img {
+  height: 120px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.card-info {
+  color: var(--global-text-color);
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--global-medium-space);
+  font-family: sans-serif;
+}
+
+.card-info .card-info_name {
+  font-size: var(--global-title-font-size);
+}
+
+.card-info_details {
+  margin-top: var(--global-medium-space);
+}
+
+.card-info_details > * {
+  display: flex;
+  align-items: center;
+}
+
+.card-info_details span {
+  margin-left: var(--global-small-space);
+}
+
+.card-info_details :not(:first-of-type) {
+  margin-top: var(--global-small-space);
+}
