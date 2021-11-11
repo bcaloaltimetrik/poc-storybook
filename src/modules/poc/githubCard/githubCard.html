@@ -1,11 +1,11 @@
 <template>
-  <div if:true={renderCard} class="container">
+  <div if:true={data} class="container">
     <img src={data.avatarUrl} alt="avatar" />
     <div class="card-info">
       <a href={data.htmlUrl} class="card-info_name">
         <span>{data.name}</span>
       </a>
-      <span>{username}</span>
+      <span>{data.username}</span>
       <div class="card-info_details">
         <div if:true={data.company} class="card-info_details-company">
           <poc-icon size="small" icon-name="building"></poc-icon>

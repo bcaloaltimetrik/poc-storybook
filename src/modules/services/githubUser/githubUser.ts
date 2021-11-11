@@ -2,18 +2,20 @@ const BASE_URL = 'https://api.github.com/users'
 
 type GithubApiUser = {
   avatar_url: string
-  html_url: string
-  name: string
   company: string
+  html_url: string
+  login: string
   location: string
+  name: string
 }
 
 export type GithubUser = {
   avatarUrl: string
-  htmlUrl: string
-  name: string
   company: string
+  htmlUrl: string
   location: string
+  name: string
+  username: string
 }
 
 export const getUser = async (username: string): Promise<GithubUser> => {
@@ -27,6 +29,7 @@ export const getUser = async (username: string): Promise<GithubUser> => {
       name: data.name,
       company: data.company,
       location: data.location,
+      username: data.login,
     }
   } catch (error) {
     throw new Error('User not found')
